@@ -1,0 +1,61 @@
+a.btn.btn-primary {
+  background-color: #008b8b !important;
+}
+
+.text-primary {
+  color: #008b8b!important;
+}
+
+
+.header-blue .hero {
+  margin-top: -20px !important;
+}
+
+.header-blue .navbar .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.header-bg {/* Bitmap */
+
+  /* position: absolute; */
+  /* width: 1042.53px;
+  height: 897.74px; */
+  /* left: 1.47px;
+  top: 0px; */
+
+  background: #BDBDBD;
+  opacity: 0.64;
+  filter: blur(1px);
+  z-index: 30;
+
+
+  /* Vector */
+
+  /* position: absolute; */
+  /* width: 1042.53px;
+  height: 897.74px; */
+  /* left: 1.47px; */
+  top: 0px;
+
+
+
+  /* Vector */
+
+  /* position: absolute; */
+  /* width: 1042.53px;
+  height: 897.74px; */
+  left: 1.47px;
+  top: 0px;
+
+  background: radial-gradient(448.87px at 50% 50%, rgba(33, 150, 83, 0.32) 0%, rgba(111, 207, 115, 0.32) 100%), url(../img/map-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  z-index: 1000;
+}
+
