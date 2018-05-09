@@ -65,6 +65,10 @@ passport.deserializeUser(User.deserializeUser());
 //routes
 require('./routes/route.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
+app.get('/about', function(req, res) {
+  res.render('about', {user: req.user});
+});
+
 app.use('/api/email', emailRouter);
 app.use('/api/invoice', invoiceRouter);
 app.use('/api/estimate', estimateRouter);

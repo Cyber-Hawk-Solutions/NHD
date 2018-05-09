@@ -24,6 +24,11 @@ a.btn.btn-primary {
   margin-top: -40px;
 }
 
+ul.nav.navbar-nav {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
 .header-bg {/* Bitmap */
 
   /* position: absolute; */

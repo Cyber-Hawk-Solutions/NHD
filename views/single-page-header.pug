@@ -2,21 +2,31 @@ extends layout.pug
 
 block append styles
   link(rel='stylesheet' href='assets/css/Navigation-with-Button.css')
-  link(rel='stylesheet' href='assets/css/Footer-Dark.css')
-  link(rel='stylesheet' href='assets/css/Services.css')
 block body
   div
     nav.navbar.navbar-light.navbar-expand-md.navigation-clean-button(style='background-color:#013644;')
       .container
-        img(src='assets/img/Cyber Hawk Logo.png' alt='Cyber Hawk Logo' width='75' height='75' href='/index')
+        img(src='assets/img/logo.png' alt='Cyber Hawk Logo' width='75' height='75' href='/index')
         a.navbar-brand(href='/' style='color:#ffffff;') Cyber Hawk
         button.navbar-toggler(data-toggle='collapse' data-target='#navcol-1')
           span.sr-only Toggle navigation
           span.navbar-toggler-icon
         #navcol-1.collapse.navbar-collapse
           ul.nav.navbar-nav.mr-auto
-              li.nav-item(role='presentation')
-                a.nav-link(href='/app-estimate' style='color:#dddddd;') Pricing
+            li.nav-item(role='presentation')
+              a.nav-link.active(href='#') About
+            li.nav-item(role='presentation')
+              a.nav-link.active(href='#') House Types
+            li.dropdown.active
+              a.dropdown-toggle.nav-link.dropdown-toggle(data-toggle='dropdown' aria-expanded='false' href='#') Locations
+              .dropdown-menu(role='menu')
+                a.dropdown-item(role='presentation' href='#') Friars&apos;s Hill
+                a.dropdown-item(role='presentation' href='#') Paynters
+                a.dropdown-item(role='presentation' href='#') Denfields
+                a.dropdown-item(role='presentation' href='#') Royal Gardens
+                a.dropdown-item(role='presentation' href='#') Lightfoot
+            li.nav-item.active(role='presentation')
+              a.nav-link.active(href='#') Lands
           if !user
             span.navbar-text.actions
               a.login(href='login' style='color:#dddddd;') Log In

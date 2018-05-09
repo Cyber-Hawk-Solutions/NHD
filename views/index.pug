@@ -30,18 +30,18 @@ block body
               .form-group
                 label(for='search-field')
                   i.fa.fa-search
-                input#search-field.form-control.search-field(type='search' name='search')
+                //- input#search-field.form-control.search-field(type='search' name='search')
             span.navbar-text
-              a.login(href='#') Log In
-            a.btn.btn-light.action-button(role='button' href='#') Sign Up
-      .container.hero
+            //-   a.login(href='#') Log In
+            //- a.btn.btn-light.action-button(role='button' href='#') Sign Up
+      .container.hero.d-sm-none.d-md-block.d-lg-block
         .row(style='height:325px;')
           .col-12.col-lg-6.col-xl-5.offset-8(style='height:294px;')
             button.btn.btn-light.btn-lg.action-button(type='button')
               i.fa.fa-map-marker.fa-inverse(style='padding-right:10px;')
               | Get started
   .highlight-phone(style='background-color:rgb(255,255,255);')
-    .container(style='height:241px;')
+    .container(style='')
       .row
         .col-md-8.col-lg-6
           .intro
@@ -51,7 +51,7 @@ block body
               br
             a.btn.btn-primary(role='button' href='#') Learn More
         .col-sm-4
-          div
+          div(style="padding-top:20px;")
             img(src='assets/img/map-top.jpg' style='height:278px;')
   section#services(style='padding:28px;background-color:rgba(112, 89, 42, 0.14);')
     .container
@@ -98,7 +98,7 @@ block body
           h2.section-heading(style="font-family:'Roboto Slab', serif;font-weight:bold;margin-bottom:10px;padding-top:20px;") House Types
           h3.section-subheading.text-muted(style='font-size:19px;font-weight:normal;') Types of houses provided by our program
       .row
-        .col-sm-4.col-md-4
+        .col-md-4
           .pricingTable.purple
             .pricingTable-header
               h3(style="font-family:'Roboto Slab', serif;") 2 Bedrooms
@@ -113,7 +113,7 @@ block body
                 li $10,255 Deposit
             .pricingTable-sign-up
               a.btn.btn-block(href='#' style='background-color:#70592a;') Details
-        .col-sm-4.col-md-4
+        .col-md-4
           .pricingTable.purple
             .pricingTable-header
               h3(style="font-family:'Roboto Slab', serif;") 3 Bedrooms
@@ -128,7 +128,7 @@ block body
                 li $11,717 Deposit
             .pricingTable-sign-up
               a.btn.btn-block(href='#' style='background-color:#70592a;') Details
-        .col-sm-4.col-md-4
+        .col-md-4
           .pricingTable.purple
             .pricingTable-header
               h3(style="font-family:'Roboto Slab', serif;") 4 Bedrooms
