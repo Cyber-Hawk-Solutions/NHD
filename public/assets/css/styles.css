@@ -6,6 +6,10 @@ a.btn.btn-primary {
   color: #008b8b!important;
 }
 
+.header-blue {
+  position: relative;
+  top: -27px;
+}
 
 .header-blue .hero {
   margin-top: -20px !important;
