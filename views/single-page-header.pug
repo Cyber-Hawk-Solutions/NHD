@@ -3,83 +3,72 @@ extends layout.pug
 block append styles
   link(rel='stylesheet' href='assets/css/Navigation-with-Button.css')
 block body
-  div
+  div.light-brown-bg
     nav.navbar.navbar-light.navbar-expand-md.navigation-clean-button(style='background-color:#013644;')
       .container
         img(src='assets/img/logo.png' alt='Cyber Hawk Logo' width='75' height='75' href='/index')
-        a.navbar-brand(href='/' style='color:#ffffff;') Cyber Hawk
+        a.navbar-brand(href='/' style='color:#ffffff; font-family:Roboto Slab, serif; font-weight: normal') National Housing Development and Urban Renewal
         button.navbar-toggler(data-toggle='collapse' data-target='#navcol-1')
           span.sr-only Toggle navigation
           span.navbar-toggler-icon
         #navcol-1.collapse.navbar-collapse
           ul.nav.navbar-nav.mr-auto
-            li.nav-item(role='presentation')
+            li.nav-item()
               a.nav-link.active(href='#') About
-            li.nav-item(role='presentation')
+            li.nav-item()
               a.nav-link.active(href='#') House Types
             li.dropdown.active
               a.dropdown-toggle.nav-link.dropdown-toggle(data-toggle='dropdown' aria-expanded='false' href='#') Locations
               .dropdown-menu(role='menu')
-                a.dropdown-item(role='presentation' href='#') Friars&apos;s Hill
-                a.dropdown-item(role='presentation' href='#') Paynters
-                a.dropdown-item(role='presentation' href='#') Denfields
-                a.dropdown-item(role='presentation' href='#') Royal Gardens
-                a.dropdown-item(role='presentation' href='#') Lightfoot
-            li.nav-item.active(role='presentation')
+                a.dropdown-item( href='#') Friars&apos;s Hill
+                a.dropdown-item( href='#') Paynters
+                a.dropdown-item( href='#') Denfields
+                a.dropdown-item( href='#') Royal Gardens
+                a.dropdown-item( href='#') Lightfoot
+            li.nav-item.active()
               a.nav-link.active(href='#') Lands
           if !user
             span.navbar-text.actions
-              a.login(href='login' style='color:#dddddd;') Log In
-              a.btn.btn-light.action-button(role='button' href='signup' style='background-color:#018ca7;') Sign Up
+              //- a.login(href='login' style='color:#dddddd;') Log In
+              //- a.btn.btn-light.action-button(role='button' href='signup' style='background-color:#018ca7;') Sign Up
           else
             a.dashboard-link.btn.btn-outline-light(href='dashboard' style='color:#dddddd;') Dashboard
-  div.parallax-header
-    div.d-flex.justify-content-center(data-bs-parallax-bg='true' style='height:165px;background-image:url(https://unsplash.it/1800/900?image=1051);background-position:center;background-size:cover;')
-      h1.align-self-center.text-center.text-light 
-        block page-title
-          | Page Title 
-  div
-    .container
-      .row
-        .col-md-12(style='margin:0px;margin-top:33px;')
-          .card
-            .card-body
-              block content
-      .row
-        .col-md-12(style='margin:0px;margin-top:33px;')
-          block post-content
-  block footer
-    .footer-dark
-      footer
-        .container
-          .row
-            .col-sm-6.col-md-3.item
-              h3 Services
-              ul
-                li
-                  a(href='#') Web design
-                li
-                  a(href='#') Development
-                li
-                  a(href='#') Hosting
-            .col-sm-6.col-md-3.item
-              h3 About
-              ul
-                li
-                  a(href='/about') Company
-                li
-                  a(href='#') Team
-            .col-md-6.item.text
-              h3 Contact Us
-              p
-                | 1(268)480-2420
-            .col.item.social
-              a(href='#')
-                i.icon.ion-social-facebook
-              a(href='#')
-                i.icon.ion-social-twitter
-              a(href='#')
-                i.icon.ion-social-snapchat
-              a(href='#')
-                i.icon.ion-social-instagram
-          p.copyright Cyber Hawk Inc. &copy; 2018
+    div.parallax-header
+      div.d-flex.justify-content-center(data-bs-parallax-bg='true' style='height:165px;background-image:url(assets/img/houses.jpg);background-position:center;background-size:cover;')
+        h1.align-self-center.text-center.text-light 
+          block page-title
+            | Page Title 
+    div
+      .container
+        .row
+          .col-md-12(style='margin:0px;margin-top:33px;')
+            .card
+              .card-body
+                block content
+        .row
+          .col-md-12(style='margin:0px;margin-top:33px;')
+            block post-content
+    block footer
+      .footer-basic(style='background-color:#70592a;')
+        footer
+          .social
+            a(href='#')
+              i.icon.ion-android-map(style='color:#ffffff;')
+            a(href='#')
+              i.icon.ion-email(style='color:#ffffff;')
+            a(href='#')
+              i.icon.ion-social-facebook(style='color:#ffffff;')
+          ul.list-inline
+            li.list-inline-item
+              a(href='#' style='color:#ffffff;') Home
+            li.list-inline-item
+              a(href='#' style='color:#ffffff;') About
+            li.list-inline-item
+              a(href='#' style='color:#ffffff;') Housing Programs
+            li.list-inline-item
+              a(href='#' style='color:#ffffff;') House Types
+            li.list-inline-item
+              a(href='#' style='color:#ffffff;') Locations
+            li.list-inline-item
+              a(href='#' style='color:#ffffff;') Forms
+          p.copyright Ecanic, Cyber Hawk Inc. &copy; 2017

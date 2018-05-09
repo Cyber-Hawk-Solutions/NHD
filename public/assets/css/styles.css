@@ -29,6 +29,26 @@ ul.nav.navbar-nav {
   justify-content: flex-end;
 }
 
+.light-brown-bg {
+  background-color: rgba(112, 89, 42, 0.14) !important;
+}
+
+h1 {
+  font-family:'Roboto Slab', serif;
+  /* font-weight:bold !important; */
+}
+
+h2 {
+  font-family:'Roboto Slab', serif;
+  text-decoration: underline;
+  color: #4d413c;
+  /* font-weight:bold !important; */
+}
+
+.card-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .header-bg {/* Bitmap */
 
   /* position: absolute; */

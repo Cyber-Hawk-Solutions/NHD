@@ -3,15 +3,24 @@ extends single-page-header.pug
 block page-title
   | About
 block content
-  section
-    h2.text-center About Us
-    section#services(style='padding-top:21px;padding-bottom:20px;')
-        .container
-          .row.text-center
-            .col-md-4
-              span.fa-stack.fa-4x(style='font-size:50px;')
-                i.fa.fa-circle.fa-stack-2x.text-primary
-                i.fa.fa-mobile-phone.fa-stack-1x.fa-inverse
-              h4.service-heading(style='color:#333333;') Website/App
-              p Cyber Hawk Inc. was founded in 2017 by a group of coworkers who all have a passion of technology. We all have a special gift has it pertains to areas such as Networking, Mobile Development, Graphics, Cyber Security and Technical Repairs.
+  section(style='padding-top:21px;padding-bottom:20px;')
+    card 
+      .row 
+        .col-6
+          h2 Mission
+          h5
+           | Our mission is to provide our employees with an honest helpful working environment, where every employee individually and collectively, can dedicate themselves to providing our customers with exceptional workmanship, extraordinary service.
+        .col-6
+          img.img-fluid(src='/assets/img/logo-text.jpg')
+      .row 
+        .col-6
+          h2 Vision
+          h5 
+            | National Housing & Development along with our dynamic team is here to provide affordable, well-structured hurricane proof homes enabling all to own a piece of this beautiful paradise.
+        .col-6
+          img.img-fluid(src='/assets/img/4-bedroom.png')
+      .row
+        h2 Objective
+        h4 
+          | Is to become Antigua and Barbuda successful and number one company in building and constructing homes for our nationals.
 

@@ -1,6 +1,5 @@
 .navigation-clean-button {
-  background:#fff;
-  padding-top:.75rem;
+  background: linear-gradient(135deg, #008b8b, #28a745);  padding-top:.75rem;
   padding-bottom:.75rem;
   color:#333;
   border-radius:0;
@@ -108,3 +107,6 @@
   background:#66d7d7;
 }
 
+a.nav-link {
+  color: #f8f9fa!important;
+}
