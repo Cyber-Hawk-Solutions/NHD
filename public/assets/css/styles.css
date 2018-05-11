@@ -6,6 +6,9 @@ a.btn.btn-primary {
   color: #008b8b!important;
 }
 
+.text-success {
+  color: #28a745!important;
+}
 
 .header-blue .hero {
   margin-top: -20px !important;
@@ -93,10 +96,22 @@ nav {
 
 .swiper-button-prev{
   /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.or…C44L0%2C22L0%2C22%2CL0%2C22z%27%20fill%3D%27%2328a745%27%2F%3E%3C%2Fsvg%3E"); */
+  background-image: none !important;
+  opacity: 0.5;
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   /* background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.or…2C2.1L5%2C0L27%2C22L27%2C22z%27%20fill%3D%27%2328a745%27%2F%3E%3C%2Fsvg%3E') !important; */
+  background-image: none !important;
+  opacity: 0.5;
+}
+
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.swiper-button-next:hover {
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
