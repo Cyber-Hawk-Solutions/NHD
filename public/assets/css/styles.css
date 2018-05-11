@@ -118,3 +118,19 @@ nav {
   opacity: 1;
   background: #28a745 !important;
 }
+
+.simple-slider {
+  background: #008b8b;
+}
+
+.swiper-container-horizontal>.swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: unset !important;
+  bottom: 0 !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #28a745 !important;
+}

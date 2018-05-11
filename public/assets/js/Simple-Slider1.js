@@ -4,17 +4,26 @@ $(function(){
   // Read more here: http://idangero.us/swiper/api/
   
   var mySwiper = new Swiper ('.swiper-container', {
-    autoplay: 4000,
-    loop: true,
-    disableOnInteraction: false,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
-    pagination: '.swiper-pagination',
+    speed: 1000,
+    loop: true,
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 30,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
     paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev'
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
     
 });
