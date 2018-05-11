@@ -1,5 +1,10 @@
 extends layout.pug
 
+block append styles
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css')
+  link(rel='stylesheet' href='/assets/css/Simple-Slider.css')
+
+
 block body
   div
     .header-blue(style='height:218px;')
@@ -13,7 +18,7 @@ block body
           #navcol-1.collapse.navbar-collapse
             ul.nav.navbar-nav
               li.nav-item(role='presentation')
-                a.nav-link.active(href='#') About
+                a.nav-link.active(href='/about') About
               li.nav-item(role='presentation')
                 a.nav-link.active(href='#') House Types
               li.dropdown.active
@@ -40,19 +45,30 @@ block body
             button.btn.btn-light.btn-lg.action-button(type='button')
               i.fa.fa-map-marker.fa-inverse(style='padding-right:10px;')
               | Get started
-  .highlight-phone(style='background-color:rgb(255,255,255);')
-    .container(style='')
-      .row
-        .col-md-8.col-lg-6
-          .intro
-            h2(style="font-family:'Roboto Slab', serif;font-weight:bold;") The Project
-            p
-              | National Housing and Development construct houses in different areas in Antigua. Some of the areas where these lovely houses are being constructed are Friar&rsquo;s Hill, Paynters, Denfields, Royal Gardens and Lightfoot. &nbsp;
-              br
-            a.btn.btn-primary(role='button' href='#') Learn More
-        .col-sm-4
-          div(style="padding-top:20px;")
-            img(src='assets/img/map-top.jpg' style='height:278px;')
+  
+    .simple-slider
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide(style='background-image:url(assets/images/houses/picture3.jpg)')
+          .swiper-slide(style='background-image:url(assets/images/houses/picture4.jpg')
+          .swiper-slide(style='background-image:url(assets/images/houses/picture1.jpg')
+        .swiper-pagination
+        .swiper-button-prev
+        .swiper-button-next
+
+  //- .highlight-phone(style='background-color:rgb(255,255,255);')
+  //-   .container(style='')
+  //-     .row
+  //-       .col-md-8.col-lg-6
+  //-         .intro
+  //-           h2(style="font-family:'Roboto Slab', serif;font-weight:bold;") The Project
+  //-           p
+  //-             | National Housing and Development construct houses in different areas in Antigua. Some of the areas where these lovely houses are being constructed are Friar&rsquo;s Hill, Paynters, Denfields, Royal Gardens and Lightfoot. &nbsp;
+  //-             br
+  //-           a.btn.btn-primary(role='button' href='#') Learn More
+  //-       .col-sm-4
+  //-         div(style="padding-top:20px;")
+  //-           img(src='assets/img/map-top.jpg' style='height:278px;')
   section#services(style='padding:28px;background-color:rgba(112, 89, 42, 0.14);')
     .container
       .row(style='margin-top:2px;margin-bottom:3px;')
@@ -189,4 +205,7 @@ block body
       p.copyright Ecanic, Cyber Hawk Inc. &copy; 2017
   script(src='/assets/js/App-Features-Carousel.js')
 
+block append scripts
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js')
+  script(src='/assets/js/Simple-Slider1.js')
 
