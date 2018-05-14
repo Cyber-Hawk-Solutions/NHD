@@ -48,6 +48,11 @@ h2 {
   /* font-weight:bold !important; */
 }
 
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #28a745 !important;
+}
+
 .card-body {
   padding-left: 2rem;
   padding-right: 2rem;

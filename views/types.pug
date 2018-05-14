@@ -1,0 +1,88 @@
+extends single-page-header.pug
+
+block page-title
+  | House Types
+
+block append styles
+  link(rel='stylesheet' href='/assets/lightbox/css/lightbox.css')
+
+block content
+  section(style='padding-top:21px;padding-bottom:20px;')
+    card 
+      .features-clean(style='padding-bottom:30px;')
+        .container
+          .row
+            .col-lg-12.text-center(style='padding-bottom:12px;')
+              h2.section-heading(style="font-family:'Roboto Slab', serif;font-weight:bold;margin-bottom:10px;padding-top:20px;")
+              h3.section-subheading.text-muted(style='font-size:19px;font-weight:normal;') Types of houses built by our programmes
+          .row
+            .col-md-4
+              .pricingTable.purple
+                .pricingTable-header
+                  h3(style="font-family:'Roboto Slab', serif;") 2 Bedrooms
+                  img.img-fluid(src='assets/img/2 bedroom.png' style='width:249px;')
+                .pricing-plans(style='background-color:#008b8b;')
+                  span.price-value
+                    i.fa.fa-usd
+                    span 205,103
+                  span.month
+                .pricingContent
+                  ul
+                    li $10,255 Deposit
+                .pricingTable-sign-up
+                  a.btn.btn-block(style='background-color:#70592a;' data-toggle='collapse' href='#house1' role='button' aria-expanded='false' aria-controls='house1') See Plan
+            .col-md-4
+              .pricingTable.purple
+                .pricingTable-header
+                  h3(style="font-family:'Roboto Slab', serif;") 3 Bedrooms
+                  img.img-fluid(src='assets/img/3-bedroom.png' style='width:249px;')
+                .pricing-plans(style='background-color:#008b8b;')
+                  span.price-value
+                    i.fa.fa-usd
+                    span 234,359
+                  span.month
+                .pricingContent
+                  ul
+                    li $11,717 Deposit
+                .pricingTable-sign-up
+                  a.btn.btn-block(style='background-color:#70592a;' data-toggle='collapse' href='#house2' role='button' aria-expanded='false' aria-controls='house2') 
+                    | See Plan
+            .col-md-4
+              .pricingTable.purple
+                .pricingTable-header
+                  h3(style="font-family:'Roboto Slab', serif;") 4 Bedrooms
+                  img.img-fluid(src='assets/img/4-bedroom.png' style='width:249px;')
+                .pricing-plans(style='background-color:#008b8b;')
+                  span.price-value
+                    i.fa.fa-usd
+                    span 254,814
+                  span.month
+                .pricingContent
+                  ul
+                    li $12,740 Deposit
+                .pricingTable-sign-up
+                  a.btn.btn-block(style='background-color:#70592a;' data-toggle='collapse' href='#house3' role='button' aria-expanded='false' aria-controls='house3') 
+                    | See Plan
+        .row.mx-auto
+            #house1.collapse.multi-collaps.mx-auto
+              .card.card-body
+                a(href='assets/img/plans/2-bedroom-plan.jpg' data-lightbox='house1')
+                  img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/plans/2-bedroom-plan.jpg')
+                a(href='assets/img/plans/2-bedroom-plan-2.jpg' data-lightbox='house1')
+                  img.img-fluid.w-100(data-toggle="lightbox" src='assets/img/plans/2-bedroom-plan-2.jpg')
+            #house2.collapse.multi-collapse.mx-auto
+              .card.card-body
+                a(href='assets/img/plans/3-bedroom-plan.jpg' data-lightbox='house2')
+                  img.img-fluid.w-100(data-toggle="lightbox" src='assets/img/plans/3-bedroom-plan.jpg')
+                a(href='assets/img/plans/3-bedroom-plan-2.jpg' data-lightbox='house2')
+                  img.img-fluid.w-100(data-toggle="lightbox" src='assets/img/plans/3-bedroom-plan-2.jpg')
+            #house3.collapse.multi-collapse.mx-auto
+              .card.card-body
+                a(href='assets/img/plans/4-bedroom-plan.jpg' data-lightbox='house3')
+                  img.img-fluid.w-100(data-toggle="lightbox" src='assets/img/plans/4-bedroom-plan.jpg')
+                a(href='assets/img/plans/4-bedroom-plan-2.jpg' data-lightbox='house3')
+                  img.img-fluid.w-100(data-toggle="lightbox" src='assets/img/plans/4-bedroom-plan-2.jpg')
+block append scripts
+  script(src='/assets/lightbox/js/lightbox.js')
+  script(src='/assets/js/house-types.js')
+

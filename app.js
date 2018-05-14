@@ -69,6 +69,10 @@ app.get('/about', function(req, res) {
   res.render('about', {user: req.user});
 });
 
+app.get('/types', function(req, res) {
+  res.render('types', {user: req.user});
+});
+
 app.use('/api/email', emailRouter);
 app.use('/api/invoice', invoiceRouter);
 app.use('/api/estimate', estimateRouter);
