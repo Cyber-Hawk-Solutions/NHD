@@ -1,0 +1,36 @@
+extends single-page-header.pug
+
+block page-title
+  | Contact
+block content
+  section
+    .m-2
+      .row.mx-auto
+        .register-photo.w-100(style='background-color:rgba(230, 227, 220, 0.34);')
+          .form-container
+            .image-holder(style='background-image:url("assets/img/houses.jpg");')
+            form(method='post')
+              h2.text-center(style="font-family:'Roboto Slab', serif;")
+                strong Get in Contact
+              .form-group
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Program/ Reason</option>
+                  <option value="1">National Housing and Development</option>
+                  <option value="2">Build on Your Own Land</option>
+                  <option value="3">Land For Youth</option>
+                  <option value="4">Other</option>
+                </select>
+              .form-group
+                input.form-control(type='email' name='email' required='' placeholder='Email')
+              .form-group
+                input.form-control(type='text' name='Telephone' required='' placeholder='Telephone')
+              .form-group
+                input.form-control(type='text' name='Message' required='' placeholder='Message')
+              .form-group
+                .form-check
+                  label.form-check-label
+                    input.form-check-input(type='checkbox')
+                    | I agree to the license terms.
+              .form-group
+                button.btn.btn-primary.btn-block(type='submit' style='background-color:#008b8b;') Email
+              a.already(href='#')
