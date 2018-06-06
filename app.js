@@ -74,7 +74,13 @@ app.get('/plan', function(req, res) {
 });
 
 app.get('/gallery', function(req, res) {
-  res.render('gallery', {user: req.user});
+
+  let gallery = {
+    'dredgeBay': ['dredge-bay/1.JPG', 'dredge-bay/2.JPG', 'dredge-bay/3.JPG', 'dredge-bay/4.JPG', 'dredge-bay/5.JPG'],
+    'denfields': ['denfields/1.JPG', 'denfields/2.JPG', 'denfields/3.JPG', 'denfields/4.JPG', 'denfields/5.JPG'],
+    'paynters': ['paynters/1.JPG', 'paynters/2.JPG', 'paynters/3.JPG', 'paynters/4.JPG' ,'paynters/5.JPG', 'paynters/6.JPG', 'paynters/7.JPG']
+  }
+  res.render('gallery', {user: req.user, gallery: gallery});
 });
 
 app.get('/contact', function(req, res) {

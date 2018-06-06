@@ -1,0 +1,60 @@
+extends single-page-header.pug
+
+block append styles
+  link(rel='stylesheet' href='/assets/lightbox/css/lightbox.css')
+
+block page-title
+  | Gallery:  
+  a.h3.text-brown(href="#dredge-bay") Dredge Bay, 
+  a.h3.text-brown(href="#denfields") Denfields, 
+  a.h3.text-brown(href="#paynters") Paynters, 
+  a.h3.text-brown(href="#royal-gardens") Royal Gardens 
+
+  
+block content
+  section
+    card.gallery
+    .m-2
+      .row 
+        #dredge-bay.row.mx-auto
+          h2.text-center.mx-auto.py-2.mb-3 Dredge Bay
+          //- button.btn.btn-outline-primary(type="button") View in Map
+          //-   i.fa.fa-map-marker-alt
+
+          .card.card-body.w-100.gallery
+            .row 
+              each image in gallery.dredgeBay
+                .col.col-md-4
+                  a(href='assets/img/gallery/'+image data-lightbox='dredge-bay')
+                    img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/gallery/'+image)
+
+        #denfields.row.mx-auto
+          h2.text-center.mx-auto.py-2.mb-3 Denfields
+          .card.card-body.w-100.gallery
+            .row 
+              each image in gallery.denfields
+                .col.col-md-4
+                  a(href='assets/img/gallery/'+image data-lightbox='denfields')
+                    img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/gallery/'+image)
+
+        #paynters.row.mx-auto
+          h2.text-center.mx-auto.py-2.mb-3 Paynters
+          .card.card-body.w-100.gallery
+            .row 
+              each image in gallery.paynters
+                .col.col-md-4
+                  a(href='assets/img/gallery/'+image data-lightbox='paynters')
+                    img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/gallery/'+image)
+
+        //- .row.mx-auto
+        //-   h2.text-center.mx-auto.py-2.mb-3 Royal Gardens
+        //-   .card.card-body.w-100.gallery
+        //-     .row 
+        //-       each image in gallery.royalGardens
+        //-         .col.col-md-4
+        //-           a(href='assets/img/gallery'+image data-lightbox='royal-gardens')
+        //-             img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/gallery'+image)
+
+
+block append scripts
+  script(src='/assets/lightbox/js/lightbox.js')
