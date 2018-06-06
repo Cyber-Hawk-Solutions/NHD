@@ -1,7 +1,19 @@
 extends single-page-header.pug
 
 block page-title
-  | House Types
+    h1.text-light.align-self-center.pl-3  House Types
+    .card.light-trans-bg.header-card.align-self-center
+      .card-body
+        .row.text-center.justify-content-center
+          .col.col-md-4.col-sm-auto.p-1.rounded.selected-light(style='margin-bottom:-5px;')
+            img.img-fluid(src='assets/img/2-bedroom.png' style='max-height:100px;')
+            h4.service-heading(style='color:#333333;padding-top:4px;margin-bottom:0.3rem;') 2 Bedrooms
+          .col.col-md-4.col-sm-auto.p-1.rounded(style='margin-bottom:-5px;')
+            img.img-fluid(src='assets/img/3-bedroom.png' style='max-height:100px;')
+            h4.service-heading(style='color:#333333;padding-top:4px;margin-bottom:0.3rem;') 3 Bedrooms
+          .col.col-md-4.col-sm-auto.p-1.rounded(style='margin-bottom:-5px;')
+            img.img-fluid(src='assets/img/4-bedroom.png' style='max-height:100px;')
+            h4.service-heading(style='color:#333333;padding-top:4px;margin-bottom:0.3rem;') 4 Bedrooms
 
 block append styles
   link(rel='stylesheet' href='/assets/lightbox/css/lightbox.css')
@@ -20,7 +32,7 @@ block content
               .pricingTable.purple
                 .pricingTable-header
                   h3(style="font-family:'Roboto Slab', serif;") 2 Bedrooms
-                  img.img-fluid(src='assets/img/2 bedroom.png' style='width:249px;')
+                  img.img-fluid(src='assets/img/2-bedroom.png' style='width:249px;')
                 .pricing-plans(style='background-color:#008b8b;')
                   span.price-value
                     i.fa.fa-usd

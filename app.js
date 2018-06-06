@@ -65,22 +65,31 @@ passport.deserializeUser(User.deserializeUser());
 //routes
 require('./routes/route.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
-app.get('/about', function(req, res) {
-  res.render('about', {user: req.user});
+app.get('/', function(req, res) {
+  res.render('index.pug', {user: req.user});
 });
 
-app.get('/types', function(req, res) {
-  res.render('types', {user: req.user});
+app.get('/plan', function(req, res) {
+  res.render('plan', {user: req.user});
 });
+
+app.get('/gallery', function(req, res) {
+  res.render('gallery', {user: req.user});
+});
+
+app.get('/contact', function(req, res) {
+  res.render('contact', {user: req.user});
+});
+
+app.get('/learn', function(req, res) {
+  res.render('learn', {user: req.user});
+});
+
 
 app.use('/api/email', emailRouter);
 app.use('/api/invoice', invoiceRouter);
 app.use('/api/estimate', estimateRouter);
 
-
-app.get('/', function(req, res) {
-  res.render('index.pug', {user: req.user});
-});
 
 app.get('/services', function(req, res) {
   res.render('services', {user: req.user});

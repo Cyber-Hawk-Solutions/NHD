@@ -1,5 +1,57 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.light-trans-bg {
+  background-color: rgba(255, 255, 255, 0.42) !important;
+}
+
+.light-bg {
+  background-color: rgba(255, 255, 255, 0.71) !important;
+}
+
+.parallax-header {
+  background: linear-gradient(135deg, #01364461, #01443861) !important;
+}
+
+.parallax-header .header-card {
+  height: 80%;
+  margin-left: 5%;
+  /* min-width: fit-content; */
+}
+
+.header-card .card-body {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+.card .selected-light {
+  background: #ffffffc2;
+}
+
+.card .selected-success {
+  background: #21a9af63;
+}
+
+.service-heading {
+  width: fit-content;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-top: 10px;
+}
+
+.heading-col {
+  min-width: fit-content;
+}
+
 a.btn.btn-primary {
   background-color: #008b8b !important;
+}
+
+a.btn.btn-secondary {
+  background-color: #fff06b !important;
+  border-color: #CDDC39;
 }
 
 .text-primary {
@@ -10,26 +62,37 @@ a.btn.btn-primary {
   color: #28a745!important;
 }
 
+
+/* 
 .header-blue .hero {
   margin-top: -20px !important;
-}
+} */
 
 .header-blue .navbar .navbar-brand {
   font-weight: bold;
   color: inherit;
   word-break: break-word;
   white-space: normal;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: 1em;
 }
 
-.header-blue .navbar .navbar-collapse {
+/* .header-blue .navbar .navbar-collapse {
   border-color: transparent;
   margin: 0;
   margin-top: -40px;
-}
+  min-width: max-content;
+} */
 
 ul.nav.navbar-nav {
   flex-grow: 1;
   justify-content: flex-end;
+}
+
+.logo {
+  position: relative;
+  top: 7px;
 }
 
 .light-brown-bg {
@@ -54,8 +117,8 @@ h2 {
 }
 
 .card-body {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
 }
 .header-bg {/* Bitmap */
 
@@ -137,5 +200,14 @@ nav {
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: #28a745 !important ;
+  /* background: #28a745 !important ; */
+  background: linear-gradient(135deg, #04655c, #008b8b, #28a745, #CDDC39) !important;
+}
+
+.gradient-bg-green {
+  background: linear-gradient(135deg, #008b8b, #28a745)
+}
+
+.col-selection .col{
+  transition: background 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }

@@ -4,33 +4,38 @@ block append styles
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css')
   link(rel='stylesheet' href='/assets/css/Simple-Slider.css')
 
-
 block body
   div
-    .header-blue(style='height:154px;')
+    .header-blue()
       nav.navbar.navbar-dark.navbar-expand-md.navigation-clean-search
         .container
-          img(src='assets/img/logo.png' alt='National Housing development Logo' width='75' height='75')
-          a.navbar-brand(href='#' style="font-family:'Roboto Slab', serif; width: 200px; padding-top: 10px;") National Housing Development and Urban Renewal
+          img.logo(src='assets/img/logo.png' alt='National Housing development Logo' width='75' height='75')
+          a.navbar-brand(href='#' style="font-family:'Roboto Slab', serif;  padding-top: 10px;") National Housing Development and Urban Renewal
           button.navbar-toggler(data-toggle='collapse' data-target='#navcol-1')
             span.sr-only Toggle navigation
             span.navbar-toggler-icon
           #navcol-1.collapse.navbar-collapse
             ul.nav.navbar-nav
               li.nav-item(role='presentation')
-                a.nav-link.active(href='/about') About
+                a.nav-link.active(href='/') Home
               li.nav-item(role='presentation')
-                a.nav-link.active(href='/types') House Types
-              li.dropdown.active
-                a.dropdown-toggle.nav-link.dropdown-toggle(data-toggle='dropdown' aria-expanded='false' href='#') Locations
-                .dropdown-menu(role='menu')
-                  a.dropdown-item(role='presentation' href='#') Friars&apos;s Hill
-                  a.dropdown-item(role='presentation' href='#') Paynters
-                  a.dropdown-item(role='presentation' href='#') Denfields
-                  a.dropdown-item(role='presentation' href='#') Royal Gardens
-                  a.dropdown-item(role='presentation' href='#') Lightfoot
-              li.nav-item.active(role='presentation')
-                a.nav-link.active(href='#') Lands
+                a.nav-link.active(href='/plan') Plan
+              li.nav-item(role='presentation')
+                a.nav-link.active(href='/gallery') Gallery
+              li.nav-item(role='presentation')
+                a.nav-link.active(href='/contact') Contact
+              li.nav-item(role='presentation')
+                a.nav-link.active(href='/learn') Learn
+              //- li.dropdown.active
+              //-   a.dropdown-toggle.nav-link.dropdown-toggle(data-toggle='dropdown' aria-expanded='false' href='#') Locations
+              //-   .dropdown-menu(role='menu')
+              //-     a.dropdown-item(role='presentation' href='#') Friars&apos;s Hill
+              //-     a.dropdown-item(role='presentation' href='#') Paynters
+              //-     a.dropdown-item(role='presentation' href='#') Denfields
+              //-     a.dropdown-item(role='presentation' href='#') Royal Gardens
+              //-     a.dropdown-item(role='presentation' href='#') Lightfoot
+              //- li.nav-item.active(role='presentation')
+                a.nav-link.active(href='/learn') Learn
             form.form-inline.mr-auto(target='_self')
               .form-group
                 label(for='search-field')
@@ -39,12 +44,12 @@ block body
             span.navbar-text
             //-   a.login(href='#') Log In
             //- a.btn.btn-light.action-button(role='button' href='#') Sign Up
-      .container.hero.d-sm-none.d-md-block.d-lg-block
-        .row(style='height:325px; position: relative; top: -27px;')
-          .col-12.col-lg-6.col-xl-5.offset-8(style='height:294px;')
-            button.btn.btn-light.btn-lg.action-button(type='button')
-              i.fa.fa-map-marker.fa-inverse(style='padding-right:10px;')
-              | Get started
+      //- .container.hero.d-sm-none.d-md-block.d-lg-block
+      //-   .row(style='height:325px; position: relative; top: -27px;')
+      //-     .col-12.col-lg-6.col-xl-5.offset-8(style='height:294px;')
+      //-       button.btn.btn-light.btn-lg.action-button(type='button')
+      //-         i.fa.fa-map-marker.fa-inverse(style='padding-right:10px;')
+      //-         | Get started
   
     .simple-slider
       .swiper-container
@@ -120,7 +125,7 @@ block body
           .pricingTable.purple
             .pricingTable-header
               h3(style="font-family:'Roboto Slab', serif;") 2 Bedrooms
-              img.img-fluid(src='assets/img/2 bedroom.png' style='width:249px;')
+              img.img-fluid(src='assets/img/2-bedroom.png' style='width:249px;')
             .pricing-plans(style='background-color:#008b8b;')
               span.price-value
                 i.fa.fa-usd
@@ -162,7 +167,7 @@ block body
             .pricingTable-sign-up
               a.btn.btn-block(href='/types/house3' style='background-color:#70592a;') Details
   .team-boxed
-  .register-photo(style='background-color:rgba(64,45,8,0.34);')
+  .register-photo(style='background-color:rgba(230, 227, 220, 0.34);')
     .form-container
       .image-holder(style='background-image:url("assets/img/houses.jpg");')
       form(method='post')

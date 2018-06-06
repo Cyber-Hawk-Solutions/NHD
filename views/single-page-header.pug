@@ -10,26 +10,32 @@ block body
         a.d-none.d-xl-block.d-lg-none.navbar-brand(href='/' style='color:#ffffff; font-family:Roboto Slab, serif; font-weight: normal') National Housing Development and Urban Renewal
         a.d-none.d-lg-block.d-xl-none.navbar-brand(href='/' style='color:#ffffff; font-family:Roboto Slab, serif; font-weight: normal') National Housing Development
         a.d-none.d-md-block.d-lg-none.navbar-brand(href='/' style='color:#ffffff; font-family:Roboto Slab, serif; font-weight: normal') National Housing Development
-        a.d-none.d-sm-block.d-md-none.navbar-brand(href='/' style='color:#ffffff; font-family:Roboto Slab, serif; font-weight: normal') National Housing Development
+        a.d-sm-block.d-md-none.navbar-brand(href='/' style='color:#ffffff; font-family:Roboto Slab, serif; font-weight: normal') National Housing Development
         button.navbar-toggler(data-toggle='collapse' data-target='#navcol-1')
           span.sr-only Toggle navigation
           span.navbar-toggler-icon
         #navcol-1.collapse.navbar-collapse
           ul.nav.navbar-nav.mr-auto
             li.nav-item()
-              a.nav-link(href='/about') About
+              a.nav-link(href='/') Home
             li.nav-item()
-              a.nav-link(href='/types') House Types
-            li.dropdown
-              a.dropdown-toggle.nav-link.dropdown-toggle(data-toggle='dropdown' aria-expanded='false' href='#') Locations
-              .dropdown-menu(role='menu')
-                a.dropdown-item( href='#') Friars&apos;s Hill
-                a.dropdown-item( href='#') Paynters
-                a.dropdown-item( href='#') Denfields
-                a.dropdown-item( href='#') Royal Gardens
-                a.dropdown-item( href='#') Lightfoot
-            li.nav-item.active()
-              a.nav-link.active(href='#') Lands
+              a.nav-link(href='/plan') Plan
+            li.nav-item()
+              a.nav-link(href='/gallery') Gallery
+            li.nav-item()
+              a.nav-link(href='/contact') Contact
+            li.nav-item()
+              a.nav-link(href='/learn') Learn
+            //- li.dropdown
+            //-   a.dropdown-toggle.nav-link.dropdown-toggle(data-toggle='dropdown' aria-expanded='false' href='#') Locations
+            //-   .dropdown-menu(role='menu')
+            //-     a.dropdown-item( href='#') Friars&apos;s Hill
+            //-     a.dropdown-item( href='#') Paynters
+            //-     a.dropdown-item( href='#') Denfields
+            //-     a.dropdown-item( href='#') Royal Gardens
+            //-     a.dropdown-item( href='#') Lightfoot
+            //- li.nav-item.active()
+            //-   a.nav-link.active(href='#') Lands
           if !user
             span.navbar-text.actions
               //- a.login(href='login' style='color:#dddddd;') Log In
@@ -37,8 +43,8 @@ block body
           else
             a.dashboard-link.btn.btn-outline-light(href='dashboard' style='color:#dddddd;') Dashboard
     div.parallax-header
-      div.d-flex.justify-content-center(data-bs-parallax-bg='true' style='height:165px;background-image:url(assets/img/houses.jpg);background-position:center;background-size:cover;')
-        h1.align-self-center.text-center.text-light 
+      div.d-flex.justify-content-center.py-2(data-bs-parallax-bg='true' style='min-height:200px;background-image:url(assets/img/houses.jpg);background-position:center;background-size:cover;')
+        h1.align-self-center.text-center.text-light
           block page-title
             | Page Title 
     div
@@ -75,3 +81,5 @@ block body
             li.list-inline-item
               a(href='#' style='color:#ffffff;') Forms
           p.copyright Ecanic, Cyber Hawk Inc. &copy; 2017
+block append scripts 
+  script(src='/assets/js/bs-animation.js')
