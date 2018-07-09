@@ -3,6 +3,10 @@ html, body {
   width: 100%;
 }
 
+.text-yellow {
+  color: #ffeb3b!important;
+}
+
 .text-brown {
   color: #99d8e0!important;
 }
@@ -222,4 +226,50 @@ nav {
 
 .gallery .col {
   padding: 5px !important;
+}
+
+.program-1, .program-2, .program-3 {
+  width: 3.5em !important;
+  height: 3.5em !important;
+  line-height: 3.5em !important;
+}
+
+.program-1  > .text-yellow, .program-2  > .text-yellow, .program-3 > .text-yellow {
+  opacity: 0.85;
+}
+.program-1 .fa-stack-2x {
+  background: url('/assets/img/site-gallery/royal-gardens/1.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  min-width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* top: -3px; */
+  border-radius: 57%;
+}
+
+
+.program-2 .fa-stack-2x {
+  background: url('/assets/img/site-gallery/royal-gardens/5.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  min-width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* top: -3px; */
+  border-radius: 57%;
+}
+
+.program-3 .fa-stack-2x {
+  background: url('/assets/img/site-gallery/denfields/5.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  min-width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* top: -3px; */
+  border-radius: 57%;
 }

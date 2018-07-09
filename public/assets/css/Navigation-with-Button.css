@@ -1,5 +1,6 @@
 .navigation-clean-button {
-  background: linear-gradient(135deg, #008b8b, #28a745);  padding-top:.75rem;
+  background: linear-gradient(135deg, #FFEB3B, #CDDC39);
+  padding-top:.75rem;
   padding-bottom:.75rem;
   color:#333;
   border-radius:0;
@@ -58,11 +59,11 @@
 }
 
 .navigation-clean-button.navbar-light .navbar-nav .nav-link {
-  color:#dddddd;
+  color:#4d413c;
 }
 
 .navigation-clean-button.navbar-light .navbar-nav .nav-link:focus, .navigation-clean-button.navbar-light .navbar-nav .nav-link:hover {
-  color:#dddddd !important;
+  color:#4d413c !important;
   background-color:transparent;
 }
 
@@ -94,7 +95,7 @@
   background:#56c6c6;
   border-radius:20px;
   font-size:inherit;
-  color:#fff;
+  color: #4d413c;
   box-shadow:none;
   border:none;
   text-shadow:none;
@@ -108,5 +109,5 @@
 }
 
 a.nav-link {
-  color: #f8f9fa!important;
+  color: #4d413c !important;
 }
