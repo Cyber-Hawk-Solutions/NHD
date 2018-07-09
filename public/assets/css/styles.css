@@ -273,3 +273,15 @@ nav {
   /* top: -3px; */
   border-radius: 57%;
 }
+
+.orange.btn-outline-primary {
+  color: #333333 !important;
+  background-color: transparent;
+  background-image: none;
+  border-color: #FF9800 !important;
+}
+.orange.btn-outline-primary:hover {
+  color: #333 !important;
+  background-color: #FF9800!important;
+  border-color: #795548!important;
+}
