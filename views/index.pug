@@ -84,11 +84,12 @@ block body
     .container
       .row 
         .col-md-6
-          video.img-fluid(controls)
-            source(src="/assets/video/test.mp4" type="video/mp4")
+          .embed-responsive.embed-responsive-16by9
+            iframe.embed-responsive-item(src='https://www.youtube.com/embed/GxrT9qynha4?rel=0' allowfullscreen='')
         .col-md-6
-          video.img-fluid(controls)
-            source(src="/assets/video/test.mp4" type="video/mp4")        
+          .embed-responsive.embed-responsive-16by9
+            iframe.embed-responsive-item(src='https://www.youtube.com/embed/URuDiCHa0aQ?rel=0' allowfullscreen='')
+     
   section#services(style='padding:28px;background-color:#fff')
     .container
       .row(style='margin-top:2px;margin-bottom:3px;')
