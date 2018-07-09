@@ -78,7 +78,9 @@ app.get('/gallery', function(req, res) {
   let gallery = {
     'dredgeBay': ['dredge-bay/1.jpg', 'dredge-bay/2.jpg', 'dredge-bay/3.jpg', 'dredge-bay/4.jpg', 'dredge-bay/5.jpg'],
     'denfields': ['denfields/1.jpg', 'denfields/2.jpg', 'denfields/3.jpg', 'denfields/4.jpg', 'denfields/5.jpg'],
-    'paynters': ['paynters/1.jpg', 'paynters/2.jpg', 'paynters/3.jpg', 'paynters/4.jpg' ,'paynters/5.jpg', 'paynters/6.jpg', 'paynters/7.jpg']
+    'paynters': ['paynters/1.jpg', 'paynters/2.jpg', 'paynters/3.jpg', 'paynters/4.jpg' ,'paynters/5.jpg', 'paynters/6.jpg', 'paynters/7.jpg'],
+    'friarshill': ['friars-hill/1.jpg', 'friars-hill/2.jpg', 'friars-hill/3.jpg', 'friars-hill/4.jpg', 'friars-hill/5.jpg', 'friars-hill/6.jpg'],
+    'royalgardens': ['royal-gardens/1.jpg', 'royal-gardens/2.jpg', 'royal-gardens/3.jpg', 'royal-gardens/4.jpg', 'royal-gardens/5.jpg'],
   }
   res.render('gallery', {user: req.user, gallery: gallery});
 });

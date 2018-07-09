@@ -5,10 +5,11 @@ block append styles
 
 block page-title
   | Gallery:  
-  a.h3.text-brown(href="#dredge-bay") Dredge Bay, 
-  a.h3.text-brown(href="#denfields") Denfields, 
-  a.h3.text-brown(href="#paynters") Paynters, 
-  a.h3.text-brown(href="#royal-gardens") Royal Gardens 
+  a.h3.text-yellow(href="#dredge-bay") Dredge Bay, 
+  a.h3.text-yellow(href="#denfields") Denfields, 
+  a.h3.text-yellow(href="#paynters") Paynters, 
+  a.h3.text-yellow(href="#frairs-hill") Friars Hill, 
+  a.h3.text-yellow(href="#royal-gardens") Royal Gardens 
 
   
 block content
@@ -44,6 +45,22 @@ block content
               each image in gallery.paynters
                 .col.col-md-4
                   a(href='assets/img/site-gallery/'+image data-lightbox='paynters')
+                    img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/site-gallery/'+image)
+        #frairs-hill.row.mx-auto
+          h2.text-center.mx-auto.py-2.mb-3 Frair's Hill
+          .card.card-body.w-100.gallery
+            .row 
+              each image in gallery.friarshill
+                .col.col-md-4
+                  a(href='assets/img/site-gallery/'+image data-lightbox='frairshill')
+                    img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/site-gallery/'+image)
+        #royal-gardens.row.mx-auto
+          h2.text-center.mx-auto.py-2.mb-3 Royal Gardens
+          .card.card-body.w-100.gallery
+            .row 
+              each image in gallery.royalgardens
+                .col.col-md-4
+                  a(href='assets/img/site-gallery/'+image data-lightbox='royalgardens')
                     img.img-fluid.w-100(data-toggle="lightbox"  src='assets/img/site-gallery/'+image)
 
         //- .row.mx-auto
