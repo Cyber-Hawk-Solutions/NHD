@@ -80,7 +80,7 @@ block body
   //-         div(style="padding-top:20px;")
   //-           img(src='assets/img/map-top.jpg' style='height:278px;')
 
-  section#video(style='padding:28px;background-color:#fff')
+  section#video(style='padding:28px;background-color:rgba(253, 245, 190, 0.34)')
     .container
       .row 
         .col-md-6
@@ -98,36 +98,47 @@ block body
       .row.text-center
 
         .col-md-4
-          span.fa-stack.fa-4x
-            i.fa.fa-circle.fa-stack-2x.text-primary
-            i.fa.fa-map-marker.fa-stack-1x.fa-inverse
+          span.fa-stack.fa-4x.program-1
+            i.fa.fa-stack-2x.text-primary
+            i.fa.fa-map-marker.fa-stack-1x.fa-inverse.text-yellow
           h4.service-heading
             | BUILD on Your Own Land&nbsp;
             br
-          p.text-muted
+          p#program-info-1.collapse.text-muted
             | Through this program individuals who already own their own land can have N.H.D. construct either one of our prototypical homes or a custom design home on their property.
+          br
+          .row.justify-content-center
+            a.see-more-button.about-see-more(data-toggle="collapse" data-target="#program-info-1" role="button")
+              i.h1.font-weight-bold.icofont.icofont-thin-down
         .col-md-4
-          span.fa-stack.fa-4x
-            i.fa.fa-circle.fa-stack-2x.text-primary
-            i.fa.fa-user-plus.fa-stack-1x.fa-inverse
+          span.fa-stack.fa-4x.program-2
+            i.fa.fa-stack-2x.text-primary
+            i.fa.fa-user-plus.fa-stack-1x.fa-inverse.text-yellow
           h4.service-heading
             | Land for Youth &nbsp;
             br
-          p.text-muted
+          p#program-info-2.collapse.text-muted
             | National Housing offers individuals to own a very piece of their own land from the age limit 18 to 35 years. 
             br
             | These land will be available in Parham. &nbsp;
             br
+          br 
+          .row.justify-content-center
+            a.see-more-button.about-see-more(data-toggle="collapse" data-target="#program-info-2" role="button")
+              i.h1.font-weight-bold.icofont.icofont-thin-down
         .col-md-4
-          span.fa-stack.fa-4x
-            i.fa.fa-circle.fa-stack-2x.text-primary(style='color:#009688;')
-            i.fa.fa-home.fa-stack-1x.fa-inverse
+          span.fa-stack.fa-4x.program-3
+            i.fa.fa-stack-2x.text-primary(style='color:#009688;')
+            i.fa.fa-home.fa-stack-1x.fa-inverse.text-yellow
           h4.service-heading
             | National Housing and Development&nbsp;
             br
-          p.text-muted
+          p#program-info-3.collapse.text-muted
             | Some of the areas where these lovely houses are being constructed are Friar&rsquo;s Hill, Paynters, Denfields, Royal Gardens and Lightfoot. &nbsp;
             br
+          .row.justify-content-center
+            a.see-more-button.about-see-more(data-toggle="collapse" data-target="#program-info-3" role="button")
+              i.h1.font-weight-bold.icofont.icofont-thin-down
   .features-clean(style='background-color:rgba(255, 191, 0, 0.25);padding-top:30px;padding-right:15px;padding-bottom:30px;padding-left:15px;')
     .container
       .row
@@ -150,7 +161,7 @@ block body
                 li 5% Deposit $10,255
                 li 1039-1035 square feet
             .pricingTable-sign-up
-              a.btn.btn-block(href='/types#house1') Details
+              a.btn.btn-block(href='/plan#house1') Details
         .col-md-4
           .pricingTable.purple
             .pricingTable-header
@@ -166,7 +177,7 @@ block body
                 li 5% Deposit $11,717
                 li 1265 square feet
             .pricingTable-sign-up
-              a.btn.btn-block(href='/types#house2' style='') Details
+              a.btn.btn-block(href='/plan#house2' style='') Details
         .col-md-4
           .pricingTable.purple
             .pricingTable-header
@@ -182,14 +193,14 @@ block body
                 li 5% Deposit $12,740
                 li 1505 square feet
             .pricingTable-sign-up
-              a.btn.btn-block(href='/types/house3' style='=') Details
+              a.btn.btn-block(href='/plan#house3' style='=') Details
   .team-boxed
   .register-photo(style='background-color:rgba(253, 245, 190, 0.34);')
     .form-container
       .image-holder(style='background-image:url("assets/img/houses.jpg");')
       form(method='post')
         h2.text-center(style="font-family:'Roboto Slab', serif;")
-          strong Get in Contact
+          strong Contact Us
         .form-group
           input.form-control(type='email' name='email' required='' placeholder='Email')
         .form-group
