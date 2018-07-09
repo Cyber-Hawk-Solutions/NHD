@@ -4,9 +4,9 @@
     $.LoadingOverlay("show");
     setTimeout(function(){
       $.LoadingOverlay("hide");
-  }, 4000);
+  }, 2000);
     // Hide it after 3 seconds
-    $(body).ready(function(){
+    $("body").ready(function(){
       setTimeout(function(){
           $.LoadingOverlay("hide");
       }, 1000);

@@ -2,11 +2,29 @@ $(function() {
     "use strict";
     $(function() {
             $(".preloader").fadeOut();
+            setSeeMoreButtonListener();
         }),
 
         jQuery(document).on("click", ".mega-dropdown", function(i) {
             i.stopPropagation();
         });
+
+    
+        function setSeeMoreButtonListener(){
+            var seeMoreButton = document.getElementsByClassName("see-more-button");
+            for (var i = 0; i < seeMoreButton.length; i++){
+                seeMoreButton[i].index = i;
+                seeMoreButton[i].onclick = function(){
+                    toggleChildIcon(seeMoreButton[this.index].getElementsByClassName("icofont")[0], "icofont-thin-down", "icofont-thin-up");
+                }
+            }
+            
+        }
+        
+        function toggleChildIcon(element,originalIcon,newIcon){
+            element.classList.toggle(originalIcon);
+            element.classList.toggle(newIcon);
+        }
 
 
     var i = function() {
