@@ -1,6 +1,12 @@
 .footer-basic {
-  background-color:#ffffff;
-  color:#4b4c4d;
+  background:linear-gradient(120.55deg, #ad7420cf -0.96%, #77521bd1 38.74%, #a97a35 75.65%, #FF9800 140.55%);
+  padding:7px;
+  padding-top:21px;
+  padding-bottom:27px;
+}
+
+.footer-basic a {
+  color:#fff;
 }
 
 .footer-basic ul {
@@ -56,4 +62,5 @@
   color:#aaa;
   margin-bottom:0;
 }
+
 

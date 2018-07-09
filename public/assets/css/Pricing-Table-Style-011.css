@@ -26,6 +26,7 @@
 
 .pricing-plans {
   padding:25px 0;
+  background-color: #8bc34a;
 }
 
 .price-value {
@@ -76,6 +77,10 @@
   border-top:1px solid #dbdbdb;
 }
 
+.pricingTable .pricingTable-sign-up .btn {
+  background-color: #FF9800;
+}
+
 .btn-block {
   width:50%;
   margin:0 auto;
@@ -92,18 +97,6 @@
   background:#fff;
   color:#008b8b;
   border:1px solid #008b8b;
-}
-
-.pricingTable.purple .pricing-plans {
-  background-color:#b696e9;
-}
-
-.pricingTable.yellow .pricing-plans {
-  background-color:#e8ae42;
-}
-
-.pricingTable.green .pricing-plans {
-  background-color:#008b8b;
 }
 
 @media screen and (max-width:990px) {

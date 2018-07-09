@@ -79,6 +79,16 @@ block body
   //-       .col-sm-4
   //-         div(style="padding-top:20px;")
   //-           img(src='assets/img/map-top.jpg' style='height:278px;')
+
+  section#video(style='padding:28px;background-color:#fff')
+    .container
+      .row 
+        .col-md-6
+          video.img-fluid(controls)
+            source(src="/assets/video/test.mp4" type="video/mp4")
+        .col-md-6
+          video.img-fluid(controls)
+            source(src="/assets/video/test.mp4" type="video/mp4")        
   section#services(style='padding:28px;background-color:#fff')
     .container
       .row(style='margin-top:2px;margin-bottom:3px;')
@@ -118,7 +128,7 @@ block body
           p.text-muted
             | Some of the areas where these lovely houses are being constructed are Friar&rsquo;s Hill, Paynters, Denfields, Royal Gardens and Lightfoot. &nbsp;
             br
-  .features-clean(style='background-color:rgba(112, 89, 42, 0.14);padding-top:30px;padding-right:15px;padding-bottom:30px;padding-left:15px;')
+  .features-clean(style='background-color:rgba(255, 191, 0, 0.25);padding-top:30px;padding-right:15px;padding-bottom:30px;padding-left:15px;')
     .container
       .row
         .col-lg-12.text-center(style='padding:0px;height:137px;')
@@ -130,48 +140,51 @@ block body
             .pricingTable-header
               h3(style="font-family:'Roboto Slab', serif;") 2 Bedrooms
               img.img-fluid(src='assets/img/2-bedroom.png' style='width:249px;')
-            .pricing-plans(style='background-color:#008b8b;')
+            .pricing-plans()
               span.price-value
                 i.fa.fa-usd
                 span 205,103
               span.month
             .pricingContent
               ul
-                li $10,255 Deposit
+                li 5% Deposit $10,255
+                li 1039-1035 square feet
             .pricingTable-sign-up
-              a.btn.btn-block(href='/types#house1' style='background-color:#70592a;') Details
+              a.btn.btn-block(href='/types#house1') Details
         .col-md-4
           .pricingTable.purple
             .pricingTable-header
               h3(style="font-family:'Roboto Slab', serif;") 3 Bedrooms
               img.img-fluid(src='assets/img/3-bedroom.png' style='width:249px;')
-            .pricing-plans(style='background-color:#008b8b;')
+            .pricing-plans()
               span.price-value
                 i.fa.fa-usd
                 span 234,359
               span.month
             .pricingContent
               ul
-                li $11,717 Deposit
+                li 5% Deposit $11,717
+                li 1265 square feet
             .pricingTable-sign-up
-              a.btn.btn-block(href='/types#house2' style='background-color:#70592a;') Details
+              a.btn.btn-block(href='/types#house2' style='') Details
         .col-md-4
           .pricingTable.purple
             .pricingTable-header
               h3(style="font-family:'Roboto Slab', serif;") 4 Bedrooms
               img.img-fluid(src='assets/img/4-bedroom.png' style='width:249px;')
-            .pricing-plans(style='background-color:#008b8b;')
+            .pricing-plans()
               span.price-value
                 i.fa.fa-usd
                 span 254,814
               span.month
             .pricingContent
               ul
-                li $12,740 Deposit
+                li 5% Deposit $12,740
+                li 1505 square feet
             .pricingTable-sign-up
-              a.btn.btn-block(href='/types/house3' style='background-color:#70592a;') Details
+              a.btn.btn-block(href='/types/house3' style='=') Details
   .team-boxed
-  .register-photo(style='background-color:rgba(230, 227, 220, 0.34);')
+  .register-photo(style='background-color:rgba(253, 245, 190, 0.34);')
     .form-container
       .image-holder(style='background-image:url("assets/img/houses.jpg");')
       form(method='post')
@@ -189,7 +202,7 @@ block body
               input.form-check-input(type='checkbox')
               | I agree to the license terms.
         .form-group
-          button.btn.btn-primary.btn-block(type='submit' style='background-color:#008b8b;') Email
+          button.btn.btn-primary.btn-block(type='submit' style='') Email
         a.already(href='#')
   .footer-basic(style='background-color:#70592a;')
     footer

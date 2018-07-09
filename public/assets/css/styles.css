@@ -2,8 +2,9 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
 .text-brown {
-  color: #99d8e0!important!important;
+  color: #99d8e0!important;
 }
 
 .light-trans-bg {
@@ -91,6 +92,10 @@ a.btn.btn-secondary {
 ul.nav.navbar-nav {
   flex-grow: 1;
   justify-content: flex-end;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #795548;
 }
 
 .logo {
@@ -204,7 +209,7 @@ nav {
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   /* background: #28a745 !important ; */
-  background: linear-gradient(135deg, #04655c, #008b8b, #28a745, #CDDC39) !important;
+  background: linear-gradient(135deg, #89ff00, #e8ff00, #ffe500, #ffbf00) !important;
 }
 
 .gradient-bg-green {
