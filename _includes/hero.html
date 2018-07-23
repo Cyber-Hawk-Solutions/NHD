@@ -1,0 +1,83 @@
+{% if page.layout == "home" %}
+<!-- {% for slide in page.slides %}
+      <img src="{{ slide.src }}">
+    {% endfor %} -->
+
+<!-- main slider start -->
+<!--==========================
+    Intro Section
+  ============================-->
+<!-- <section id="intro">
+  <div class="intro-container">
+    <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <div class="carousel-item active">
+          <div class="carousel-background">
+            <img src="assets/img/intro-carousel/1.jpg" alt="">
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2>Celebrating 21 Years!</h2>
+              <p>
+                  1997 - 2018
+              </p>
+              <a href="#featured-services" class="btn-get-started scrollto">See the story</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="assets/img/intro-carousel/2.jpg" alt="">
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2>Opening Hours</h2>
+              <p> Mon to Thurs 8am - 4pm </p>
+              <p> Friday 8am - 2pm </p>
+              <a href="#featured-services" class="btn-get-started scrollto">Access Forms</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="assets/img/intro-carousel/3.jpg" alt="">
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2>Are you liscensed and insured going into this Carnival Season?</h2>
+              <p>Lets get you on the right track</p>
+              <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </div>
+</section> -->
+<!-- #intro -->
+<!-- Main slider end -->
+
+{% else %}
+<div id="banner">
+  <div class="h-100 d-flex justify-content-center" data-bs-parallax-bg="true" style="background-image:url('{{ page.hero-img }}');background-position:center;background-size:cover;">
+    <h1 class="align-self-center text-center text-light"> {{ page.title }} </h1>
+  </div>
+</div>
+{% endif %}
