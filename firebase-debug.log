@@ -5,7 +5,7 @@
 [debug] [2018-07-23T13:48:59.295Z] Node Version:  v8.9.4
 [debug] [2018-07-23T13:48:59.296Z] Time:          Mon Jul 23 2018 09:48:59 GMT-0400 (SA Western Standard Time)
 [debug] [2018-07-23T13:48:59.296Z] ----------------------------------------------------------------------
-[debug] 
+[debug]
 [debug] [2018-07-23T13:48:59.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
 [debug] [2018-07-23T13:48:59.314Z] > authorizing via signed-in user
 [debug] [2018-07-23T13:48:59.316Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
@@ -13,22 +13,22 @@
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' }
  Mon Jul 23 2018 09:48:59 GMT-0400 (SA Western Standard Time)
 [debug] [2018-07-23T13:48:59.959Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-23T13:49:00.075Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nhdurco  
+[debug] [2018-07-23T13:49:00.075Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nhdurco
  Mon Jul 23 2018 09:49:00 GMT-0400 (SA Western Standard Time)
 [debug] [2018-07-23T13:49:00.825Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-23T13:49:00.826Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nhdurco/tokens  
+[debug] [2018-07-23T13:49:00.826Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nhdurco/tokens
  Mon Jul 23 2018 09:49:00 GMT-0400 (SA Western Standard Time)
 [debug] [2018-07-23T13:49:02.650Z] <<< HTTP RESPONSE 200
 [info] 1
-[info] 
+[info]
 [info] === Deploying to 'nhdurco'...
-[info] 
+[info]
 [info] i  deploying hosting
 [info] i  hosting: preparing _site directory for upload...
-[debug] [2018-07-23T13:49:34.345Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/nhdurco/uploads/-LI6P_45wZYrjBQ2MBpx?fileCount=939&message=  
+[debug] [2018-07-23T13:49:34.345Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/nhdurco/uploads/-LI6P_45wZYrjBQ2MBpx?fileCount=939&message=
  Mon Jul 23 2018 09:49:34 GMT-0400 (SA Western Standard Time)
 [debug] [2018-07-23T15:15:15.117Z] <<< HTTP RESPONSE 401
 [debug] [2018-07-23T15:15:15.166Z] <<< HTTP RESPONSE BODY undefined
@@ -43,5 +43,5 @@
     at Request.emit (events.js:211:7)
     at IncomingMessage.<anonymous> (C:\Users\cajames\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1085:12)
     at Object.onceWrapper (events.js:313:30)
-[error] 
+[error]
 [error] Error: An unexpected error has occurred.
