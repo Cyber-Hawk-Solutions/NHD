@@ -1,0 +1,66 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: National Housing Development and Urban Renewal Co. Ltd.
+email: inquires@nhdurco.com
+description: Antigua and Barbuda's number one company in building and constructing homes for our nationals.
+        
+
+#>- # this means to ignore newlines until "baseurl:"
+ 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+address: "Bay St., Villa, P.O, Box W829, St. John's Antigua & Barbuda W.I"
+phone: "+1.268.562.7824"
+fax: "+1.268.562.7821"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+
+# SEO Related
+google_site_verificaiton : ""
+
+# Analytics
+analytics:
+    provider : false
+    google:
+        tracking_id :
+            anonymize_ip :
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+collections:
+  dine:
+    output: true
+  escape:
+    output: true
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

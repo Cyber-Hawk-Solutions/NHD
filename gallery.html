@@ -1,0 +1,74 @@
+---
+layout: single-page
+title: Gallery
+banner: assets/img/houses.jpg
+nav: 
+  - title: DredgeBay
+    href: "#dregebay"
+    class:
+  - title: Denfeilds
+    href: "#denfields"
+  - title: Paynters
+    href: "#paynters"
+  - title: Friars' Hill
+    href: "#friars-hill"
+  - title: Royal Gardens
+    href: "#royal-gardens"
+gallery: 
+  - title: DredgeBay
+    url: "dredge-bay"
+    imageNum: 6
+  - title: Denfeilds
+    url: denfields
+    imageNum: 5
+  - title: Paynters
+    url: paynters
+    imageNum: 7
+  - title: Friars' Hill
+    url: friars-hill
+    imageNum: 6
+  - title: Royal Gardens
+    url: royal-gardens
+    imageNum: 5
+---
+<section><div class="m-2">
+  <div class="row">
+    <div class="col">
+      <div class="">
+        <div class="">
+          <div class="">
+            <div class="event-content">
+              <section style="padding-bottom:20px;">
+                <card>
+                  <div class="multi-collapse collapse show mx-auto features-clean" id="house1" style="padding-bottom:30px;">
+                    <div class="row mx-auto">
+                      <div class="p-1">
+                        {% comment %} <h2 class="text-center "></h2> {% endcomment %}
+                        
+                      </div>
+                      {% for section in page.gallery %}
+                      <div class="card card-body w-100">
+                          <div class="row mx-auto" id="{{section.url}}">
+                              <h2 class="text-center mx-auto p-1 mb-3 round"> {{section.title}} <a class="btn button-dark vertical-center">See in map<i class="fa fa-map-marker fa-2x vertical-center-sub" style="padding-left:10px"></i></a></h2>
+                              <div class="card card-body w-100 gallery">
+                                <div class="row">
+                                    {% for i in (1.. section.imageNum) %} 
+                                    <div class="col col-md-4" style="padding:5px;"><a href="assets/img/site-gallery/{{section.url}}/{{i}}.jpg" data-lightbox="{{section.title}}"><img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/site-gallery/{{section.url}}/{{i}}.jpg"/></a></div>
+                                    {% endfor %}
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </card>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

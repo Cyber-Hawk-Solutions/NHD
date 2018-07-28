@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    {% for neighbour in page.featured-neighbours %}
+    <div id="featured-neighbours" class="card bg-dark text-white col-sm-12 col-md-4 p-0 border-0">
+      <img class="card-img" src="{{ neighbour.image-src }}" alt="{{ neighbour.image-title }}">
+      <div class="card-img-overlay p-0  align-items-center d-flex justify-content-center">
+        <h1 class="card-title">{{ neighbour.title }}</h1>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
