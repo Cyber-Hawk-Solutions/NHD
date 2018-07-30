@@ -218,7 +218,7 @@
 
 .vertical-center {
   vertical-align: -webkit-baseline-middle;
-} 
+}
 
 .vertical-center-sub {
   vertical-align: sub;
@@ -228,4 +228,14 @@
 
 #main section li {
   margin-left: 35px;
+}
+
+.services-icon img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+    left: 74px;
+  top: 78px;
+  width: 1.5em;
+  height: 1.5em;
 }
