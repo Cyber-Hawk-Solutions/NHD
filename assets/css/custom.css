@@ -43,7 +43,7 @@
 }
 
 .program-3 .fa-stack-2x {
-  /*background: url('/assets/img/site-gallery/denfields/5.jpg');*/
+  background: linear-gradient(135deg, #cccccc45 -40%, #cccccc14 69%);
   height: 100%;
   width: 100%;
   background-position: center;
