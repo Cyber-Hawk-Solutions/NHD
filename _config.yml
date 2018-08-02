@@ -23,8 +23,8 @@ description: Antigua and Barbuda's number one company in building and constructi
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 address: "Bay St., Villa, P.O, Box W829, St. John's Antigua & Barbuda W.I"
-phone: "+1.268.562.7824"
-fax: "+1.268.562.7821"
+phone: "1(268) 562-7824"
+fax: "1(268) 562-7821"
 
 # Build settings
 markdown: kramdown
