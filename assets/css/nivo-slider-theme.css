@@ -398,3 +398,7 @@ preview-2
   position: relative;
   height: 100%;
 }
+
+.house-slider .nivo-caption {
+  opacity: 0 !important;
+}
