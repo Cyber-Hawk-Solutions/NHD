@@ -60,6 +60,13 @@
     manualAdvance: false,
   });
 
+  $('.house-slider').nivoSlider({
+    effect: 'slideInLeft',
+    pauseTime: 5000,
+    directionNav: true,
+    controlNavThumbs: false
+  }); 
+
   /*----------------------------
    Scrollspy js
   ------------------------------ */
