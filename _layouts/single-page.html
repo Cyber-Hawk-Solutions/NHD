@@ -35,7 +35,10 @@ title:
                   <a class="" href="/">Home</a>
                 </li>
                 <li>
-                  <a class="" href="/plan">Plan</a>
+                  <a class="" href="/plan">Plans</a>
+                </li>
+                <li>
+                  <a class="" href="/nursery">Nursery</a>
                 </li>
                 <li>
                   <a class="" href="/gallery">Gallery</a>
@@ -70,6 +73,9 @@ title:
               <!-- <i class="fa fa-quote-right"></i> -->
 
             <h1 class="text-light"> {{page.title}} </h1>
+            {% if page.subtitle %}
+            <h3 class="text-primary"> {{page.subtitle}}</h3>
+            {% endif %}
 
             <div class="">
                 <!-- Nav tabs -->
