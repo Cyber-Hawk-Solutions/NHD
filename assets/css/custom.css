@@ -239,3 +239,13 @@
   width: 1.5em;
   height: 1.5em;
 }
+
+.title {
+  color: #4c8923;
+}
+
+.about-img {
+  width: 50%;
+  float: right;
+  margin-bottom: 15px;
+}
