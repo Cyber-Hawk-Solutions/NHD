@@ -13,12 +13,20 @@ nav:
 nav-att:  'role="tab" data-toggle="tab"'
 images:
   house1: 
-    - src: new/2-bedroom
+    - src: 105
+    - src: 106
+    - src: 107
+    - src: 108
   house2:
-    - src: new/3-bedroom
+    - src: 201
+    - src: 202
+    - src: 203
+    - src: 204
   house3:
-    - src: new/2-bedroom
-
+    - src: 101
+    - src: 102
+    - src: 103
+    - src: 104
 ---
 <section><div class="m-2">
   <div class="row">
@@ -42,8 +50,8 @@ images:
                           <div class="bend niceties preview-2">
                             <div id="" class="house-slider" >
                               {% for image in page.images.house1 %}
-                              <a href="assets/img/plans/{{image.src}}.jpg" data-lightbox="house1">
-                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/{{image.src}}.jpg" />
+                              <a href="assets/img/houses/{{image.src}}.jpg" data-lightbox="house1">
+                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/houses/{{image.src}}.jpg" />
                               </a>
                               {% endfor %}
                             </div>
@@ -95,8 +103,8 @@ images:
                           <div class="bend niceties preview-2">
                             <div class="house-slider" >
                               {% for image in page.images.house2 %}
-                              <a href="assets/img/plans/{{image.src}}.jpg" data-lightbox="house2">
-                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/{{image.src}}.jpg" />
+                              <a href="assets/img/houses/{{image.src}}.jpg" data-lightbox="house2">
+                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/houses/{{image.src}}.jpg" />
                               </a>
                               {% endfor %}
                             </div>
@@ -148,8 +156,8 @@ images:
                           <div class="bend niceties preview-2">
                             <div class="house-slider class" >
                               {% for image in page.images.house3 %}
-                              <a href="assets/img/plans/{{ image.src }}.jpg" data-lightbox="house3">
-                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/{{ image.src }}.jpg" />
+                              <a href="assets/img/houses/{{ image.src }}.jpg" data-lightbox="house3">
+                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/houses/{{ image.src }}.jpg" />
                               </a>
                               {% endfor %}
                             </div>
