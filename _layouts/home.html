@@ -196,20 +196,11 @@ layout: default
       </div>
     </div>
     <!-- End About area -->
+
     <!-- Start Suscrive Area -->
-    <div class="suscribe-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-            <div class="suscribe-text text-center" style="position: relative; z-index: 2;">
-              <h3>Take advantage of our programs!</h3>
-              <a class="sus-btn" href="/get-started">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include get-started-banner.html %}
     <!-- End Suscrive Area -->
+    
     <!-- Start Service area -->
     <div id="services" class="services-area area-padding">
       <div class="container-fluid">
@@ -373,7 +364,8 @@ layout: default
                 <li class="check">1039-1035 square feet</li>
                 <!-- <li class="check cross">Free domin</li> -->
               </ol>
-              <button href="/plan#1">Details</button>
+              
+              <a href="plan"><button href="/plan#1">Details</button></a>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
@@ -383,10 +375,10 @@ layout: default
               <img class="img-fluid" src='assets/img/plans/new/2-bedroom.jpg' style='width:249px;'>
               <h3><span>$234,359</span></h3>
               <ol>
-                <li class="check">5% Deposit $10,11,717</li>
+                <li class="check">5% Deposit $11,717</li>
                 <li class="check">1262 square feet</li>
               </ol>
-              <button href="/plan#2">Details</button>
+              <a href="plan"><button href="/plan#1">Details</button></a>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
@@ -398,7 +390,7 @@ layout: default
                 <li class="check">5% Deposit $12,740</li>
                 <li class="check">1500 square feet</li>
               </ol>
-              <button href="/plan#3">Details</button>
+              <a href="plan"><button href="/plan#1">Details</button></a>
             </div>
           </div>
         </div>
