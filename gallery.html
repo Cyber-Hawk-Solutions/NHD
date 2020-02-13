@@ -6,8 +6,7 @@ nav:
   - title: Paynters
     href: "#paynters"
   - title: DredgeBay
-    href: "#dredgebay"
-    class:
+    href: "#dredge-bay"
   - title: Denfeilds
     href: "#denfields"
   - title: Friars' Hill
@@ -17,18 +16,23 @@ nav:
 gallery: 
   - title: Paynters
     url: paynters
+    map: https://drive.google.com/open?id=1eIMouZVrIq8C57IpbGxp5U5NyQFJ385z&usp=sharing
     imageNum: 9
   - title: DredgeBay
     url: "dredge-bay"
+    map: https://drive.google.com/open?id=1kPlKEn3bCGKteOFPkX8zCxM1RM6YWCu8&usp=sharing
     imageNum: 8
   - title: Denfeilds
     url: denfields
+    map: https://drive.google.com/open?id=1rCvWbJ7cV8Rhnv6sPfRxf7zOiwVMpWUq&usp=sharing
     imageNum: 8
   - title: Friars' Hill
     url: friars-hill
+    map: https://drive.google.com/open?id=1UTelrOAj3Y3x5qfirua3FFcm_fxR1LkU&usp=sharing
     imageNum: 8
   - title: Royal Gardens
     url: royal-gardens
+    map: https://drive.google.com/open?id=1RYQ7AE3jfCZsJAF-S5qzTZQTxwDLILFn&usp=sharing
     imageNum: 9
 ---
 <section><div class="mx-2 mb-2">
@@ -46,7 +50,7 @@ gallery:
             {% for section in page.gallery %}
             <div class="card card-body w-100">
                 <div class="row mx-auto" id="{{section.url}}">
-                    <h2 class="text-center mx-auto p-1 mt-3 mb-0 round"> {{section.title}} <a class="btn button-dark vertical-center">See in map<i class="fa fa-map-marker fa-2x vertical-center-sub" style="padding-left:10px"></i></a></h2>
+                    <h2 class="text-center mx-auto p-1 mt-3 mb-0 round"> {{section.title}} <a target="_blank" href="{{section.map}}" class="btn button-dark vertical-center">See in map<i class="fa fa-map-marker fa-2x vertical-center-sub" style="padding-left:10px"></i></a></h2>
                     <div class="card card-body w-100 gallery">
                       <div class="row">
                           {% for i in (1.. section.imageNum) %} 
