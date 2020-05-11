@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: National Housing Development and Urban Renewal Co. Ltd.
-email: inquires@nhdurco.com
+email: inquiries@nhdurco.com
 description: Antigua and Barbuda's number one company in building and constructing homes for our nationals.
         
 
