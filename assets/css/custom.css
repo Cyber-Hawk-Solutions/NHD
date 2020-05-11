@@ -252,6 +252,7 @@
 
 .suscribe-area {
   position: relative !important;
+  overflow: hidden;
 }
 
 .suscribe-area:before {
