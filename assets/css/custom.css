@@ -285,7 +285,7 @@
 .trees-bg {
   position: absolute;
   height: 60vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(/assets/img/festivities.svg);
   left: 0;
   margin-top: 50px;
