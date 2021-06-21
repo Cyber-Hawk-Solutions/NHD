@@ -200,16 +200,32 @@
   text-decoration: none;
 }
 
-.round .button-dark:hover {
+ .button-dark:hover {
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
 }
-.round .button-dark  {
+ .button-dark  {
   background: #444 none repeat scroll 0 0;
   border: 1px solid #444;
   color: #fff;
   margin-bottom: 25px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  border-radius: 30px;
+}
+
+.button-light:hover {
+  background: #444 none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #fff;
+}
+ .button-light  {
+
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;margin-bottom: 25px;
   padding: 10px 35px;
   text-transform: uppercase;
   transition: all 0.4s ease 0s;
@@ -295,4 +311,15 @@
 .team-content {
   padding: 10px 0px;
   background: #fff;
+}
+
+.suscribe-area .sus-btn {
+  position: absolute;
+  z-index: 1;
+}
+
+.text-border-underline {
+  text-decoration: solid 8px #4c8923 !important;
+  border-bottom: 3px solid #75be43;
+  display: inline-block;
 }
