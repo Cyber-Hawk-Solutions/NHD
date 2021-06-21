@@ -323,3 +323,15 @@
   border-bottom: 3px solid #75be43;
   display: inline-block;
 }
+
+.full-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.work-left-text img {
+  width: 100%;
+}
