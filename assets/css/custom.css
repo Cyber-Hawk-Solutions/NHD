@@ -313,9 +313,29 @@
   background: #fff;
 }
 
-.suscribe-area .sus-btn {
+.suscribe-area .sub-btn {
   position: absolute;
-  z-index: 1;
+  z-index: 1
+}
+
+.sub-btn {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid #fff;
+  color: #009688;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 100px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.sub-btn:hover {
+  background: #009688 none repeat scroll 0 0;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .text-border-underline {
@@ -334,4 +354,8 @@
 
 .work-left-text img {
   width: 100%;
+}
+
+iframe {
+  max-width: 100%;
 }
