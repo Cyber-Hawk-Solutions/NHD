@@ -359,3 +359,29 @@
 iframe {
   max-width: 100%;
 }
+
+@media (min-width: 768px){
+
+
+  .dropdown ul {
+      /* display: none; */
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      background: #000000d6;
+      padding: 4px 8px 12px 8px;
+  }
+
+  .dropdown > ul > li {
+    padding: 8px 10px !important;
+  }
+
+  .dropdown-hidden {
+    display: none!important;
+  }
+
+  li.dropdown.active a::after{
+    content: none !important
+  }
+  
+}
