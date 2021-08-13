@@ -298,6 +298,11 @@
   opacity: 1;
 }
 
+.sus-btn {
+  position: relative;
+  z-index: 1;
+}
+
 .trees-bg {
   position: absolute;
   height: 60vh;
@@ -384,4 +389,12 @@ iframe {
     content: none !important
   }
   
+}
+
+.nivo-directionNav a.nivo-prevNav::before {
+  background: #67676738 none repeat scroll 0 0 !important;
+}
+
+.nivo-directionNav a.nivo-nextNav::before {
+  background:#67676738 none repeat scroll 0 0 !important;
 }

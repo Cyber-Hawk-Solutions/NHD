@@ -10,6 +10,8 @@ nav:
     href: "#p-view-2"
   - title: Four Bedroom
     href: "#p-view-3"
+  - title: Four Converted to Three Bedroom
+    href: "#p-view-4"
 nav-att:  'role="tab" data-toggle="tab"'
 images:
   house1: 
@@ -30,6 +32,20 @@ images:
     - src: 4Bedroom2
     - src: 4Bedroom3
     - src: 4Bedroom4
+  house1Plans: 
+  - src: two-model-1
+  - src: 2-Bedroom-2-bath
+  - src: 2-Bedroom-2-bath-2
+  - src: 2-Bedroom-2-bath-3
+  house2Plans: 
+  - src: three-model-1
+  - src: 3-Bedroom-2-bath
+  - src: 3-Bedroom-2-bath-2
+  - src: 3-Bedroom-2-bath-3
+  house3Plans: 
+  - src: four-model-1
+  house4Plans: 
+  - src: 4-to-3-model-1
 ---
 
 <section><div class="m-2">
@@ -56,6 +72,17 @@ images:
                               {% for image in page.images.house1 %}
                               <a href="assets/img/houses/renders/{{image.src}}.jpg" data-lightbox="house1">
                                 <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/houses/renders/{{image.src}}.jpg" />
+                              </a>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-area">
+                          <div class="bend niceties preview-2">
+                            <div id="" class="house-slider" >
+                              {% for image in page.images.house1Plans%}
+                              <a href="assets/img/plans/2021/new/{{image.src}}.jpg" data-lightbox="house1plan">
+                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/2021/new/{{image.src}}.jpg" />
                               </a>
                               {% endfor %}
                             </div>
@@ -112,6 +139,17 @@ images:
                             </div>
                           </div>
                         </div>
+                        <div class="slider-area">
+                          <div class="bend niceties preview-2">
+                            <div id="" class="house-slider" >
+                              {% for image in page.images.house2Plans%}
+                              <a href="assets/img/plans/2021/new/{{image.src}}.jpg" data-lightbox="house2plan">
+                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/2021/new/{{image.src}}.jpg" />
+                              </a>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <!-- <div class="row mx-auto">
@@ -160,6 +198,69 @@ images:
                                 <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/houses/renders/{{ image.src }}.jpg" />
                               </a>
                               {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-area">
+                          <div class="bend niceties preview-2">
+                            <div id="" class="house-slider" >
+                              {% for image in page.images.house3Plans%}
+                              <a href="assets/img/plans/2021/new/{{image.src}}.jpg" data-lightbox="house3plan">
+                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/2021/new/{{image.src}}.jpg" />
+                              </a>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="row mx-auto">
+                      <h2 class="text-center mx-auto py-2 mb-3">Plans</h2>
+                      <div class="card card-body w-100">
+                        <a href="assets/img/plans/2-bedroom-plan.jpg" data-lightbox="house1">
+                          <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/2-bedroom-plan.jpg" />
+                        </a>
+                        <a href="assets/img/plans/2-bedroom-plan-2.jpg" data-lightbox="house1">
+                          <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/2-bedroom-plan-2.jpg" />
+                        </a>
+                      </div>
+                    </div> -->
+                    <div class="row d-flex text-center  suscribe-area align-items-center">
+                      <div class="col-md-6 my-3">
+                        <h2 class="pt-3 px-3 m-0 pb-1 text-light">Four Bedroom Home</h2>
+                        <a href="pricing"><h3 class="m-0 text-light text-underline" style="margin:0.3em; text-decoration: underline;">See Pricing</h3></a>
+                      </div>
+                      <div class="col-md-6">
+                        <a class="sus-btn" href="/contact"> Contact Us</a>
+                      </div>
+                    </div>
+                  </div>
+                </card>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="p-view-4">
+          <div class="tab-inner">
+            <div class="event-content head-team">
+              <section style="padding-bottom:20px;">
+                <card>
+                  <div class="multi-collapse collapse show mx-auto features-clean" id="house1" style="padding-bottom:30px;">
+                    <div class="row mx-auto">
+                      <div class="p-1">
+                        <h2 class="text-center ">Four Converted To Three Bedroom</h2>
+                        <h2 class="text-center mx-auto">Pictures</h2>
+                      </div>
+                      <div class="card card-body w-100">
+                        <div class="slider-area">
+                          <div class="bend niceties preview-2">
+                            <div id="" class="house-slider" >
+                              {% for image in page.images.house4Plans%}
+                              <a href="assets/img/plans/2021/new/{{image.src}}.jpg" data-lightbox="house4plan">
+                                <img class="img-fluid w-100" data-toggle="lightbox" src="assets/img/plans/2021/new/{{image.src}}.jpg" />
+                              </a>
+                              {% endfor %}
+                            </div>
                             </div>
                           </div>
                         </div>
