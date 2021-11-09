@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 3.8.3"
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
