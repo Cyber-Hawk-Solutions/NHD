@@ -162,6 +162,10 @@
   display: flex;
 }
 
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
 .nav-menu {
   margin-bottom: 40px;
   text-align: center;
@@ -397,4 +401,13 @@ iframe {
 
 .nivo-directionNav a.nivo-nextNav::before {
   background:#67676738 none repeat scroll 0 0 !important;
+}
+
+.hover-link {
+  transition: all 0.3s ease 0s;
+  text-decoration: underline;
+}
+
+.hover-link:hover {
+  color: #009688;
 }
